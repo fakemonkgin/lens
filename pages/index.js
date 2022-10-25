@@ -43,9 +43,9 @@ export default function Home() {
             <p className="mt-6 text-xl text-center">{profile.name}</p>
             <p className="mt-2 text-base text-center text-gray-400">{profile.bio}</p>
             <Link href={`/profile/${profile.handle}`}>
-              <p> {profile.handle} </p>
+              <p className="mt-2 mb-2 text-lg font-medium text-center cursor-pointer text-violet-600"> {profile.handle} </p>
             </Link>
-          <p>{profile.stats.totalFollowers} followers</p>
+          <p className="text-sm font-medium text-center text-pink-600">{profile.stats.totalFollowers} followers</p>
             </div>
           ))
         }
